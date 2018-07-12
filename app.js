@@ -165,13 +165,20 @@ app.get("/anon_login", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {allo
 
 // Protected area. If current user is not authenticated - redirect to the login widget will be returned.
 // In case user is authenticated - a page with current user information will be returned.
-app.get("/login", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {successRedirect : '/protected', forceLogin: true}));
+app.get("/login", passport.authenticate(WebAppStrategy.STRATEGY_NAME, {successRedirect : '/front', forceLogin: true}));
 
 app.get("/logout", function(req, res, next) {
 	WebAppStrategy.logout(req);
 	// If you chose to store your refresh-token, don't forgot to clear it also in logout:
 	res.clearCookie("refreshToken");
 	res.redirect("/");
+});
+
+app.get("/front",function(req,res) {
+	console.log('request handler for front was called');
+	res.writeHead(200, {"Content-Type": "text/html"});
+	res.write("random numbers that should come in the form of json");
+	res.end();
 });
 
 
