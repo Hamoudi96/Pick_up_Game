@@ -184,6 +184,7 @@ app.use('/', function(req, res, next) {
 	res.sendFile(__dirname + '/public/index.html');
 });
 
+
 app.use(function(err, req, res, next) {
 	if (err instanceof UnauthorizedException) {
 		WebAppStrategy.logout(req);
