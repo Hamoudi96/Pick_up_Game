@@ -8,8 +8,9 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "cfenv": "^1.0.3",
+    "@cloudant/cloudant": "^2.3.0",
     "bluemix-appid": "^3.0.0",
+    "cfenv": "^1.0.3",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
     "express": "^4.13.4",
