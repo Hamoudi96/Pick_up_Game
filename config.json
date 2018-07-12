@@ -1,7 +1,7 @@
 {
-  "clientId": "61dac0d0-f08a-483c-a955-125c87f58c82",
-  "oauthServerUrl": "https://appid-oauth.ng.bluemix.net/oauth/v3/d5e15dac-ccc5-4af4-8bc3-f72ea7056069",
-  "profilesUrl": "https://appid-profiles.ng.bluemix.net",
-  "secret": "MjJjMjQ0OTYtODY0NC00ZDlmLTkzOGMtMTY4NGU4MmQ1OWM3",
-  "tenantId": "d5e15dac-ccc5-4af4-8bc3-f72ea7056069"
+ "clientId": "61dac0d0-f08a-483c-a955-125c87f58c82",
+ "oauthServerUrl": "https://appid-oauth.ng.bluemix.net/oauth/v3/d5e15dac-ccc5-4af4-8bc3-f72ea7056069",
+ "profilesUrl": "https://appid-profiles.ng.bluemix.net",
+ "secret": "MjJjMjQ0OTYtODY0NC00ZDlmLTkzOGMtMTY4NGU4MmQ1OWM3",
+ "tenantId": "d5e15dac-ccc5-4af4-8bc3-f72ea7056069"
 }

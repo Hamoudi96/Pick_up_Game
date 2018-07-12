@@ -40,6 +40,18 @@ const port = process.env.PORT || 3000;
 const isLocal = cfEnv.getAppEnv().isLocal;
 
 const config = getLocalConfig();
+
+var Cloudant = require('@cloudant/cloudant');
+var me = 'b341fed5-7e78-4231-80bf-ecfaa4e5f1e8-bluemix'; // Set this to your own account
+var password = 'c26987d6f936abdb6c08b2ef4aa7a1136dd910e89c07484ee5fa57c92d46a257';
+
+// Initialize the library with my account.
+var cloudant = Cloudant({account:me, password:password});
+
+cloudant.db.list(function(err, allDbs) {
+  console.log('All my databases: %s', allDbs.join(', '))
+});
+
 configureSecurity();
 
 // Setup express application to use express-session middleware
